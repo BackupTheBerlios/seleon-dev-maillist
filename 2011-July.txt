@@ -1,0 +1,160 @@
+From admin at 3dgrid.de  Thu Jul  7 22:11:54 2011
+From: admin at 3dgrid.de (Manny Emor)
+Date: Thu, 07 Jul 2011 22:11:54 +0200
+Subject: [SeLe-dev] OpenSim Testversionen
+Message-ID: <4E16130A.6040709@3dgrid.de>
+
+
+
+> ------------------------------------------------------------------------
+>
+> 	*Von:* "Powerdesign" <info at powerdesign.at>
+> *Datum:* 7. Juli 2011 20:09
+> *An:* admin at 3dgrid.de
+> *Betreff:* opensim testversionen
+>
+>
+> Hallo Markus
+>
+> Ja, im FotoGrid hab ich noch nicht upgegraded ... 0.7.1.1 macht mir da 
+> bei den ini-Dateien noch ein bisserl Kopfzerbrechen. Die 0.7.1er m?cht 
+> ich lieber gleich ?berspringen. Schade, da? es f?r mein Nokia noch 
+> keinen Viewer gibt *g* sonst h?tt ich gleich reingeschaut ;)
+>
+> Was deine ini-Probleme betrifft - ich hatte da auch mal sowas und wenn 
+> ich mich nicht irre dar?ber auf meinem Hauptrechner irgendwo Notizen 
+> gemacht. Werd morgen gleich mal danach suchen.
+>
+> Da? mein Testmodul bei dir unter Mono 2.7.x auf Anhieb l?uft find ich 
+> super!!! Da bin ich mit meiner C# Lernerei doch vielleicht nicht ganz 
+> auf dem Holzweg ;)
+>
+> Greetz
+> Georg
+>
+>
+> -----Urspr?ngliche Nachricht-----
+>
+> ------------------------------------------------------------------------
+>
+> 	*Von:* Manny Emor <admin at 3dgrid.de>
+> *Datum:* 7. Juli 2011 18:02
+> *An:* Georg Klai?ner <info at powerdesign.at>
+> *Betreff:* opensim testversionen
+>
+>
+> Bin gerade in Deinem Grid*g Du bist noch auf 0.7.0.2?!
+>
+>
+> ------------------------------------------------------------------------
+>
+> 	*Von:* Georg Klai?ner <info at powerdesign.at>
+> *Datum:* 7. Juli 2011 16:46
+> *An:* Manny Emor <admin at 3dgrid.de>
+> *Betreff:* opensim testversionen
+>
+>
+> Hallo Markus
+>
+> Ein user w?re eigentlich garnicht notwendig. Es w?rde mir schon 
+> reichen, wenn ich dir meine Module als DLL Dateien (im Anhang - die 
+> passende OpenSim Version ist im Dateinamen) senden darf und du 
+> versuchst, OpenSim.exe mit denen im bin Verzeichnis neu zu starten 
+> (ein Neustart von Robust.exe ist hier nicht notwendig).
+>
+> Im Fehlerfall bricht der Start mit einer recht kryprischen roten 
+> Fehlermeldung ab. Im Erfolgsfall sieht man dann ?ber "show modules" 2 
+> neue Module geladen:
+>
+> Shared Module: jOpenSimTestModule
+> Shared Module: jOpenSimMoneyModule
+>
+> Das jOpenSimTestModule macht (noch) garnix, das jOpenSimMoneyModule 
+> hat nur eine spartanische Funktion, beim Login eines User die OS$ 
+> Balance auf 12.345,- zu setzen. Es sollten daf?r keine ?nderungen in 
+> der OpenSim.ini notwendig sein und man kann damit derzeit auch weder 
+> OS$ bezahlen noch empfangen.
+>
+> Beim Fall eines Fehlstarts w?re f?r mich diese rote kryptische Meldung 
+> und in beiden F?llen die Version von mono (mono --version) 
+> interessant. Ich hatte bei Mono version 2.4.x Probleme, das mu? 
+> allerdings nicht unbedingt davon, sondern kann auch von OpenSim selber 
+> kommen.
+>
+> Falls du jemanden kennst, der OpenSim auf Win laufen hat, w?re dort so 
+> ein kurzer Test auch recht interessant f?r mich ;)
+>
+> Greetz
+> Georg
+>
+> PS.: bin mir nicht sicher, ob ich bei deinem Grid eine Hilfe sein 
+> kann, ich bin aber gerne f?r dich da. Voraussichtlich werde ich 
+> entweder Samstag oder Sonntag im B?ro sitzen und an dem Modul feilen - 
+> h?ngt von meiner Familie und vom Wetter ab. Vielleicht kommen wir per 
+> Email und/oder in meinem Grid zum Gedankenaustausch zusammen...
+>
+> ------------------------------------------------------------------------
+>
+> 	*Von:* Manny Emor <admin at 3dgrid.de>
+> *Datum:* 7. Juli 2011 16:14
+> *An:* Georg Klai?ner <info at powerdesign.at>
+> *Betreff:* opensim testversionen
+>
+>
+> Hallo Georg,
+>
+> also mit ner WinBox kann ich leider nicht dienen - habe noch eine 
+> Maschine (Ubuntu 10.04 TLS) auf der ich Dir nen User anbieten kann. 
+> Alles zum Betrieb von OpenSim ist drauf. K?nntest also Deine eigenen 
+> OpenSim Instanzen machen, wie Du willst. Also wenn Du Dich ein wenig 
+> mit ner Shell auskennst .......
+>
+> Also sag mal bescheid. Vielleicht k?nntest Du mir auch mal bei meinem 
+> Grid helfen - habe da diverse Fehler, deren Ursache ich in der 
+> Konfiguration sehe .....
+>
+> Gru?
+> Markus
+>
+>
+> ------------------------------------------------------------------------
+>
+> 	*Von:* Georg Klai?ner <info at powerdesign.at>
+> *Datum:* 7. Juli 2011 12:15
+> *An:* 3DGrid <admin at 3dgrid.de>
+> *Betreff:* opensim testversionen
+>
+>
+> Hallo Markus
+>
+> Jetzt hab ich doch noch auf meine alten Tage mit C# und C++ angefangen ;)
+>
+> Derzeit arbeite ich an einem (einfachen) Currency-Modul f?r OpenSim 
+> <-> jOpenSim. Dummerweise ist das Verhalten bei Currency zwischen 
+> 0.7.0.2 und 0.7.1 sehr unterschiedlich und langsam gehen mir die 
+> Rechner aus, wo ich noch Testversionen installieren k?nnte *g* und 
+> frage mich, ob du vielleicht Testserver aufgesetzt hast, wo man die 
+> Lauff?higkeit der Module testen kann.
+>
+> Ich selber habe das Modul bereits unter beiden oben erw?hnten 
+> Versionen auf OpenSuSE mit Mono (v 2.10.x) zum Laufen gebracht - auch 
+> wenn das Modul im Moment noch nicht viel tut, au?er beim Login ein 
+> Startguthaben zu generieren. Alle notwendigen Methoden sind aber 
+> bereits (wenn auch leer) implementiert.
+>
+> Hast du vielleicht auch irgendwo eine Winbox mit OpenSim zum Testen?
+>
+> Greetz
+> Georg
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/seleon-dev/attachments/20110707/5daf47d2/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: compose-unknown-contact.jpg
+Type: image/jpeg
+Size: 770 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/seleon-dev/attachments/20110707/5daf47d2/attachment.jpg>
+
